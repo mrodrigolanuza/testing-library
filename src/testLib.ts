@@ -10,11 +10,11 @@ export function expect<T>(expected:T){
 export async function test(description:string, callback:()=>void){
     try{
         await callback();
-        console.log("OK! " + description);
+        console.log('\u2705' + ' ' + description); //OK check mark icon
     }
     catch(error)
     {
-        console.log("NOK " + description);
+        console.log('\u274c' + ' ' + description); //NOK red cross icon
         console.log(error);
     }
 }
