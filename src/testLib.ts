@@ -18,3 +18,10 @@ export async function test(description:string, callback:()=>void){
         console.log(error);
     }
 }
+
+export const it = test; //Fisrt class function due to functions can be handle as variables.
+
+export function describe(description:string, callback:()=>void){
+    console.log(description);
+    callback();
+}
