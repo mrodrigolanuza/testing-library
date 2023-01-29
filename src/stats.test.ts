@@ -10,9 +10,9 @@ result = average([1,2,3]);
 expected = 2;
 expect(expected).toBe(result);
 
-function expect(expected){
+function expect<T>(expected:T){
     return {
-        toBe(result){
+        toBe(result:T){
             if(result === expected)
                 console.log("OK ");
             else
