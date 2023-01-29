@@ -7,9 +7,9 @@ export function expect<T>(expected:T){
     }
 }
 
-export function test(description:string, callback:()=>void){
+export async function test(description:string, callback:()=>void){
     try{
-        callback();
+        await callback();
         console.log("OK! " + description);
     }
     catch(error)
