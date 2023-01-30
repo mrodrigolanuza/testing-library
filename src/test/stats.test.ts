@@ -1,5 +1,5 @@
-import {sum, average} from "./stats";
-import * as statsAsync from "./statsAsync";
+import {sum, average} from "../stats";
+import * as statsAsync from "../statsAsync";
 
 describe("Stats should", ()=>{
     it("calculate the sum of all elements of the array", ()=>{
