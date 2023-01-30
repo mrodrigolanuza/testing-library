@@ -1,6 +1,4 @@
-import {sum} from "./stats";
-import {average} from "./stats";
-import {describe, expect, test, it} from "./testLib";
+import {sum, average} from "./stats";
 import * as statsAsync from "./statsAsync";
 
 describe("Stats should", ()=>{
